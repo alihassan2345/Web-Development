@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- task 1 -->
+     <ul>
+        <li>biryani </li>
+        <li>pizza </li>
+        <li>burger</li>
+        <li>pasta</li>
+        <li>ice cream</li>
+     </ul>
+
+        <!-- task 2 -->
+        <ol>
+            <li>Wake up at 6 AM</li>
+            <li>Exercise for 30 minutes</li>
+            <li>Have breakfast</li>
+            <li>Study for 2 hours</li>
+            <li>Work on projects</li>
+          </ol>
+
+            <!-- task 3 -->
+            <ol>
+                <li>Fruits
+                  <ul>
+                    <li>Apples</li>
+                    <li>Bananas</li>
+                    <li>Oranges</li>
+                  </ul>
+                </li>
+                <li>Vegetables
+                  <ul>
+                    <li>Carrots</li>
+                    <li>Tomatoes</li>
+                    <li>Spinach</li>
+                  </ul>
+                </li>
+                <li>Dairy
+                  <ul>
+                    <li>Milk</li>
+                    <li>Cheese</li>
+                    <li>Yogurt</li>
+                  </ul>
+                </li>
+              </ol>
+              
+              
+                <!-- task 4 -->
+                <ul style="list-style-type: square;">
+                    <li>Reading</li>
+                    <li>Coding</li>
+                    <li>Gaming</li>
+                  </ul>
+
+                  <!-- task 5 -->
+                  <ol type="I"> <!-- Roman Numbers -->
+                    <li>First Task</li>
+                    <li>Second Task</li>
+                    <li>Third Task</li>
+                  </ol>
+                  
+                  <ol type="A"> <!-- Alphabets -->
+                    <li>Option A</li>
+                    <li>Option B</li>
+                    <li>Option C</li>
+                  </ol>
+                  
+                  <!-- task 6 -->
+                  <ul id="todo-list">
+                    <li>Complete Homework</li>
+                    <li>Go for a Walk</li>
+                  </ul>
+                  <button onclick="addItem()">Add Task</button>
+                  
+                  <script>
+                    function addItem() {
+                      let ul = document.getElementById("todo-list");
+                      let li = document.createElement("li");
+                      li.textContent = "New Task";
+                      ul.appendChild(li);
+                    }
+                  </script>
+                  
+</body>
+</html>
