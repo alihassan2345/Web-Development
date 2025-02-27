@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4a261;
+            color: white;
+        }
+        td {
+            background-color: #f8edeb;
+        }
+    </style>
+</head>
+<body>
+    <!-- task 3 -->
+   
+    <h2 style="text-align: center;">Weekly Timetable</h2>
+        
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>9:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 12:00</th>
+                <th>12:00 - 1:00</th>
+                <th>1:00 - 2:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td rowspan="2">Math</td>
+                <td>Science</td>
+                <td>English</td>
+                <td colspan="2">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>History</td>
+                <td>Physics</td>
+                <td colspan="2">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Biology</td>
+                <td rowspan="2">Chemistry</td>
+                <td>Computer</td>
+                <td colspan="2">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>English</td>
+                <td>History</td>
+                <td colspan="2">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td colspan="3">Sports</td>
+                <td colspan="2">Lunch Break</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
