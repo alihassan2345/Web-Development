@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <h2>Job Application</h2>
+
+    <form action="job_submit.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="position">Job Position:</label>
+        <select id="position" name="position">
+            <option value="web_developer">Web Developer</option>
+            <option value="graphic_designer">Graphic Designer</option>
+            <option value="seo_specialist">SEO Specialist</option>
+        </select><br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" name="skills" value="html"> HTML
+        <input type="checkbox" name="skills" value="css"> CSS
+        <input type="checkbox" name="skills" value="javascript"> JavaScript
+        <input type="checkbox" name="skills" value="python"> Python<br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume"><br><br>
+
+        <button type="submit">Apply Now</button>
+    </form>
+
+</body>
+</html>
