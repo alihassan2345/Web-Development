@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Portfolio</title>
+</head>
+<body>
+
+  <h1>Ali Hassan's Portfolio</h1>
+
+  <!-- Images with alt text -->
+  <img src="profile.jpg" alt="Ali Hassan smiling in front of a laptop" width="200">
+  <img src="project.jpg" alt="Screenshot of a web development project" width="300">
+
+  <p>Welcome to my web development portfolio. Use <kbd>Alt + H</kbd> to go to Home and <kbd>Alt + C</kbd> to Contact me.</p>
+
+  <!-- Links with accesskey -->
+  <a href="#home" accesskey="h" tabindex="1">Home</a> |
+  <a href="#contact" accesskey="c" tabindex="2">Contact</a>
+
+  <!-- Content Sections -->
+  <section id="home" tabindex="3">
+    <h2>About Me</h2>
+    <p>I am a front-end developer with experience in HTML, CSS, JavaScript, and more.</p>
+  </section>
+
+  <section id="contact" tabindex="4">
+    <h2>Contact</h2>
+    <p>Email: ali@example.com</p>
+  </section>
+
+</body>
+</html>
